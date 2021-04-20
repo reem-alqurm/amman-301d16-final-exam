@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Welcome</h1>
+    <div class="row">
+        <% qouts.forEach(element =>{%>
+            <div class="card">
+            <h3><%= element.character%></h3>
+            <img src="<%= element.image%>" alt="">
+            <p><%= element.quote%></p>
+
+            <form action="/favorite-quotes" method="POST">
+                <input type="hidden" value="<%= element.character%>" name="character">
+                <input type="hidden" value="<%= element.image%>" name="image">
+                <input type="hidden" value="<%= element.quote%>" name="quote">
+                <input type="submit" value="Fav">
+            </form>
+        </div>
+       <% })%>
+    </div>
+</body>
+</html>

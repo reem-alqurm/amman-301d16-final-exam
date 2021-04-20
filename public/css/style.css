@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-color:  #62C8E4;
+    font-family: sans-serif;
+}
+.row{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card{
+    width: 400px;
+    background-color: #16a085;
+    
+}
+h3, h2, p{
+    color: #fefb1e;
+}
