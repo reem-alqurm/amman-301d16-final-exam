@@ -9,7 +9,10 @@
     
 </head>
 <body>
-    <h1>Welcome</h1>
+    <header>
+        <%-include('./layout/header.ejs')%>
+    </header>
+   <main>
     <div class="row">
         <% qouts.forEach(element =>{%>
             <div class="card">
@@ -25,6 +28,6 @@
             </form>
         </div>
        <% })%>
-    </div>
+    </div></main>
 </body>
 </html>

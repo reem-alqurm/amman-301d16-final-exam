@@ -7,6 +7,20 @@ body{
     background-color:  #62C8E4;
     font-family: sans-serif;
 }
+header{
+    padding-bottom: 50px;
+}
+nav{
+    background-color: #16a085;
+    
+}
+nav img{
+    width: 100px;
+}
+nav a{
+    text-decoration: none;
+    padding: 10px;
+}
 .row{
     position: absolute;
     display: flex;
@@ -16,8 +30,13 @@ body{
 .card{
     width: 400px;
     background-color: #16a085;
+    margin: 20px;
     
 }
+.card img{
+    width: 200px;
+}
 h3, h2, p{
+    padding: 20px;
     color: #fefb1e;
 }
